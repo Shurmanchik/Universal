@@ -1,0 +1,222 @@
+.essay
+  padding-top: 60px
+  padding-bottom: 60px
+  &__column
+    width: 615px
+  &__title
+    font-family: $slab
+    font-size: 25px
+    line-height: 30px
+    color: $main
+    margin: 45px 0 30px
+  &__text
+    font-size: 18px
+    line-height: 30px
+    color: $text-color
+    margin-top: 0
+    margin-bottom: 30px
+    &_first
+      &::first-letter
+        float: left
+        padding-top: 10px
+        margin-left: -7px
+        padding-right: 10px
+        font-family: $lato-h
+        font-size: 100px
+        line-height: 75px
+        color: $blue
+  &__writer
+    position: absolute
+    right: 0
+    top: -160px
+  &-slider
+    margin-top: 60px
+    margin-bottom: 45px
+    border-radius: 10px
+    border: 1px solid $gray15
+    position: relative
+    &__item
+      background-color: $white
+    &__img
+      width: 100%
+      height: 555px
+      object-fit: cover
+    &__about
+      padding: 0 35px
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__text
+      padding: 12px 30px 12px 0
+      font-size: 14px
+      line-height: 20px
+      color: inherit
+    &__autor
+      border-left: 1px solid $gray15
+      padding: 9px 0 12px 30px
+      min-width: 227px
+      flex-shrink: 0
+    &__name
+      color: inherit
+    &__career
+      opacity: 1
+      color: $gray50
+    &__button
+      position: absolute
+      width: 60px
+      height: 60px
+      top: 50%
+      transform: translateY(-110%)
+      z-index: 10
+      border: none
+      background: transparent
+      &_prev
+        background-image: url(../img/arrow-slide-left.svg)
+        left: 35px
+      &_next
+        background-image: url(../img/arrow-slide-right.svg)
+        right: 35px
+  &__quote
+    margin-top: 80px
+    margin-bottom: 45px
+    font-family: $slab
+    font-size: 25px
+    line-height: 30px
+    color: $main
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: -20px
+      left: -20px
+      width: 70px
+      height: 70px
+      background-image: url(../img/quote.svg)
+      background-repeat: no-repeat
+      z-index: -1
+  &__addition
+    position: absolute
+    top: 135px
+    right: 0
+    width: 263px
+  &__tags
+    margin-top: 43px
+    &::after
+      top: 90px
+      width: 653px
+  &__repost
+    margin-top: 75px
+    margin-bottom: 30px
+.repost
+  &__title
+    margin-top: 0
+    margin-bottom: 25px
+    font-family: $slab
+    font-size: 25px
+    line-height: 30px
+  &__buttons
+    display: flex
+  &__button
+    display: flex
+    align-items: center
+    margin-right: 14px
+    &:hover
+      color: $blue
+      & .btn__icon
+        fill: $blue
+  &__icon
+    margin-left: 0
+    &_like
+      width: 17px
+      height: 15.6px
+      margin-right: 9.5px
+    &_fb
+      width: 10px
+      height: 18px
+      margin-right: 15px
+      margin-left: 2px
+    &_tw
+      width: 18px
+      height: 14.8px
+      margin-right: 7.5px
+.writer
+  width: 263px
+  padding: 35px 25px 15px
+  background-color: $white
+  border-radius: 10px
+  border: 1px solid $gray15
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-size: 14px
+  line-height: 20px
+  &::after
+    content: ''
+    position: absolute
+    bottom: 50px
+    left: 0
+    width: 100%
+    height: 1px
+    background-color: $gray15
+  &__avatar
+    width: 90px
+    height: 90px
+    object-fit: cover
+    border-radius: 50%
+  &__about
+    text-align: center
+  &__name
+    margin-top: 15px
+    margin-bottom: 5px
+    font-family: $slab
+    font-size: 20px
+    line-height: 25px
+    color: $main
+  &__career
+    display: block
+    color: $text-color
+    margin-bottom: 15px
+  &__counter
+    display: block
+    margin-bottom: 20px
+    font-family: $lato-900
+    color: $main
+  &__link
+    margin-bottom: 0
+    margin-top: 15px
+    font-family: $lato-900
+    color: $main
+    text-decoration: none
+    &:hover
+      color: $blue
+.addition
+  width: 263px
+  &__title
+    margin-top: 0
+    margin-bottom: 20px
+    font-family: $slab
+    font-size: 20px
+    line-height: 25px
+    color: $main
+  &__subtitle
+    margin-top: 10px
+    margin-bottom: 5px
+    font-family: $slab
+    font-size: 16px
+    line-height: 25px
+    color: $main
+  &__text
+    margin-top: 0
+    margin-bottom: 20px
+    font-size: 14px
+    line-height: 20px
+  &__img
+    width: 100%
+    height: 180px
+    object-fit: cover
+    border-radius: 10px
+  &__count
+    color: $gray50
+    opacity: 1
+  &__view
+    margin-right: 14px

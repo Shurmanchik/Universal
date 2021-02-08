@@ -1,0 +1,101 @@
+.hero
+  padding-top: 60px
+  padding-bottom: 72px
+  background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url(../img/hero-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  color: $white
+  &_career
+    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url(../img/career-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+  &_detective
+    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75)), url(../img/detective-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+  &__subtitle
+    font-family: $lato-900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-nav
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none
+    &__item
+      display: flex
+      align-items: center
+      margin-right: 20px
+      &:first-child
+        margin-right: 32px
+      &:last-child
+        margin-right: 0
+    &__link
+      display: flex
+      align-items: center
+      font-family: $lato-900
+      font-size: 14px
+      line-height: 20px
+      color: inherit
+      text-decoration: none
+      &:hover
+        color: $blue
+        & .hero-nav__icon
+          fill: $blue
+    &__icon
+      display: inline-block
+      fill: $white
+      &-home
+        width: 18px
+        height: 17px
+        margin-right: 6px
+      &-arrow
+        width: 15px
+        height: 7px
+        &_left
+          margin-right: 8px
+        &_right
+          margin-left: 8px
+  &__lable
+    position: absolute
+    top: 92px
+    left: -93px
+  &__icon
+    width: 21px
+    height: 27px
+    fill: $white
+    opacity: 0.5
+  &__title
+    max-width: 750px
+    margin-top: 50px
+    margin-bottom: 30px
+    font-family: $slab
+    font-size: 55px
+    line-height: 70px
+  &__text
+    width: 635px
+    margin-top: 0
+    margin-bottom: 43px
+    font-size: 18px
+    line-height: 30px
+    opacity: 0.85
+  &__count
+    opacity: 0.85
+  &__date
+    margin-right: 23px
+  &__like
+    margin-right: 22px
+.bookmark
+  &__icon
+    &_active
+      fill: $red
+      opacity: 1

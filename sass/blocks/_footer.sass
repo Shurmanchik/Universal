@@ -1,0 +1,109 @@
+.footer
+  padding-bottom: 55px
+  &__top
+    display: flex
+  &-menu
+    position: relative
+    width: 195px
+    margin-bottom: 64px
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 5px
+      background-color: transparent
+    &_news
+      &::before
+        background-color: $red
+    &_articles
+      &::before
+        background-color: $purple
+    &_video
+      &::before
+        background-color: $blue
+    &_courses
+      &::before
+        background-color: $orange
+    &_information
+      &::before
+        background-color: $green
+    &_categories
+      width: 165px
+      &::before
+        background-color: $grayblue
+    &__title
+      margin-top: 35px
+      margin-bottom: 25px
+      font-family: $lato-900
+      font-size: 14px
+      line-height: 20px
+      color: $main
+    &__list
+      list-style: none
+      margin: 0
+      padding: 0
+    &__item
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+    &__link
+      text-decoration: none
+      font-family: $lato-400
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      &:hover
+        color: $blue
+  &__middle
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 30px
+    padding-bottom: 29px
+    border-top: 1px solid $gray15
+    border-bottom: 1px solid $gray15
+  &-nav
+    display: flex
+    margin-top: 0
+    margin-bottom: 0
+    margin-right: auto
+    margin-left: 30px
+    padding: 0
+    list-style: none
+    &__item
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+    &__link
+      text-decoration: none
+      font-family: $lato-900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      color: $main
+      text-transform: uppercase
+      &:hover
+        color: $blue
+  &-button
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none
+    &__item
+      margin-right: 15px
+      &:last-child
+        margin-right: 0
+    &__img
+      width: 40px
+      height: 40px
+  &__bottom
+    padding-top: 40px
+    display: flex
+    justify-content: space-between
+    font-family: $lato-400
+    font-size: 14px
+    line-height: 20px
+    color: $gray50
+  &__disclaimer
+    width: 750px
+    margin: 0

@@ -1,0 +1,91 @@
+*
+  box-sizing: border-box
+body
+  font-family: $lato-400
+  color: $text-color
+  background-color: $white
+.container
+  max-width: 1140px
+  margin: 0 auto
+.inner
+  &-wrapper
+    max-width: 945px
+    margin: 0 auto
+    position: relative
+img
+  max-width: 100%
+button
+  cursor: pointer
+.btn
+  color: $white
+  background-color: $blue
+  border-radius: 20px
+  padding: 10px 20px
+  border: 2px solid transparent
+  font-family: $lato-900
+  font-size: 14px
+  text-decoration: none
+  &:hover
+    background: transparent
+    border-color: $blue
+    box-shadow: 0 0 10px 0 $blue
+  &__count
+    margin-left: 8px
+    font-family: $lato-400
+.bluegreen
+  color: $bluegreen
+.grayblue
+  color: $grayblue
+.lightblue
+  color: $lightblue
+.purple
+  color: $purple
+.orange
+  color: $orange
+.green
+  color: $green
+.blue
+  color: $blue
+.red
+  color: $red
+.rose
+  color: $rose
+.violet
+  color: $violet
+form
+  position: relative
+input
+  &.success
+    border: 1px solid $green
+  &.invalid
+    border: 1px solid $red
+    &::placeholder
+      color: $red
+label
+  &.invalid
+    color: $red
+    font-size: 12px
+    position: absolute
+    left: 0
+    top: -17px
+.nowrap
+  white-space: nowrap
+.top-button
+  right: 30px
+  bottom: 30px
+  display: none
+  position: fixed
+  width: 30px
+  height: 30px
+  border: 1px solid $gray15
+  cursor: pointer
+  background-image: url(../img/arrow-top_gray.svg)
+  background-repeat: no-repeat
+  background-position: center
+  z-index: 10
+  &:hover
+    border-color: $gray15
+    background-color: $gray15
+    background-image: url(../img/arrow-top_white.svg)
+  &_active
+    display: block
